@@ -40,9 +40,12 @@ for more detailed instructions.  The Heroku instructions included below are abri
 
       * Run `heroku create` to create your heroku app. Take note of the info that pops up in the terminal, especially the URL that looks like  http://xxxxxxxxx.herokuapp.com/ That's the URL for your dashboard!
 
- 3. Swap in your Alchemy auth token.
+ 3. Add in your Alchemy API Key.
 
-      > Change line 8 in `main.py` to reflect your particular Alchemy auth token!  Don't forget to sign into your Alchemy account to use the Transfers API.  See https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/transfers-api for more specific documentation.  
+      > Change the Alchemy API Key in `main.py` to reflect your particular Alchemy auth token!  We recommend that you set this key in your environment variables.  
+      > To set the API key in Heroku's environment variables, run: `heroku config:set KEY="<YOUR ALCHEMY KEY>"`
+      
+      > Don't forget to sign into your Alchemy account to use the Transfers API.  See https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/transfers-api for more specific documentation.  
 
       If you don’t already have an Alchemy account, [you’ll first need to create one](https://alchemy.com/?r=affiliate:ba2189be-b27d-4ce9-9d52-78ce131fdc2d). The free version will work fine for getting started.  First, we create an App for our Dashboard by clicking “Create App” under the Apps dropdown menu.
 
