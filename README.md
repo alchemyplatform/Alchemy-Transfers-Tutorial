@@ -10,6 +10,14 @@ In this tutorial, we’ll look at an example of how, with just a few lines of co
 For ease of user experience, we configured this particular tutorial to run on Heroku, but you are more than welcome to use other service providers!
 ***
 
+Problem Statement: 🐕
+
+Instead of sending burnt tokens to 0xdead, which is recommended for most token burning, creators of Akita Inu (AKITA) and Shiba Inu (SHIBA) chose to gift Vitalik Buterin with large swaths of their dog-themed tokens.  Instead of leaving the meme tokens untouched, Vitalk instead chose to sell tokens in batches to Uniswap, swapping them for ETH and donated both the ETH proceeds and the rest of the tokens that could not be sold to a whole host of charities.  Check out this article for more info.
+
+One of the lucky recipients of this windfall was the Gitcoin community multisig account.  With the market valuation of the AKITA token transfer at ~$450 million, no single market would be able to absorb a single sale of the tokens, and if the multisig attempted to do so, the price of AKITA would plummet.  As such, the Gitcoin community decided to implement a token “rescue” process that would burn 13 AKITA tokens for every 1 AKITA sold off to the open market.   
+
+Our example dashboard follows along with the story of AKITA and its rescue process by tracking the total number of AKITA tokens held in the Gitcoin multisig and the total number of tokens that have been burnt as part of the rescue contract. The dashboard that we create performs two functions.  Upon refresh of page or user click, the webapp fires off a request to Alchemy, querying the Gitcoin multisig address and the “rescue” smart contract.  After receiving the response, the dashboard parses the JSON object and processes it.  Ultimately, the website frontend displays the processed items.
+
 ### 🚀 Launching with Heroku ###
 
  1. Get the repo!
