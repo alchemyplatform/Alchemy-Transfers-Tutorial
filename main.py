@@ -5,7 +5,7 @@ import json
 from web3 import Web3
 import requests
 
-ALCHEMY_KEY = os.environ.get("API_KEY")
+ALCHEMY_KEY = os.environ.get('API_KEY')
 w3 = Web3(Web3.HTTPProvider('https://eth-mainnet.alchemyapi.io/v2/'+ALCHEMY_KEY))
 
 # includes the standard ERC20 ABI info
