@@ -46,13 +46,13 @@ for more detailed instructions.  The Heroku instructions included below are abri
        
 To set the API key in Heroku's environment variables, run: `heroku config:set KEY="<YOUR ALCHEMY KEY>"`
       
-      >  Don't forget to sign into your Alchemy account to use the Transfers API.  See https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/transfers-api for more specific documentation.  
+Don't forget to sign into your Alchemy account to use the Transfers API.  See https://docs.alchemy.com/alchemy/documentation/apis/enhanced-apis/transfers-api for more specific documentation.  
 
 If you don’t already have an Alchemy account, [you’ll first need to create one](https://alchemy.com/?r=affiliate:ba2189be-b27d-4ce9-9d52-78ce131fdc2d). The free version will work fine for getting started.  First, we create an App for our Dashboard by clicking “Create App” under the Apps dropdown menu.
 
-      ![webhook_1](https://github.com/pileofscraps/Alchemy-Transfers-Tutorial/blob/master/app.png)
+![webhook_1](https://github.com/pileofscraps/Alchemy-Transfers-Tutorial/blob/master/app.png)
       
-      Once we have created the app and pointed it towards the appropriate network, we're ready to go and can paste in our key.
+Once we have created the app and pointed it towards the appropriate network, we're ready to go and can paste in our key.
 
  4. Deploy Heroku.
 
