@@ -22,7 +22,7 @@ Our example dashboard follows along with the story of AKITA and its rescue proce
 
  1. Get the repo!
 
-      * `git clone https://github.com/alchemyplatform/Alchemy-Notify-Tutorial`
+      * `git clone https://github.com/pileofscraps/Alchemy-Transfers-Tutorial`
 
 For all Heroku dependent documentation, refer to:
 https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true 
