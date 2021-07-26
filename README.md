@@ -10,7 +10,7 @@ In this tutorial, we’ll look at an example of how, with just a few lines of co
 For ease of user experience, we configured this particular tutorial to run on Heroku, but you are more than welcome to use other service providers!
 ***
 
-Problem Statement: 🐕
+### Problem Statement: 🐕 ###
 
 Instead of sending burnt tokens to 0xdead, which is recommended for most token burning, creators of Akita Inu (AKITA) and Shiba Inu (SHIBA) chose to gift Vitalik Buterin with large swaths of their dog-themed tokens.  Instead of leaving the meme tokens untouched, Vitalk instead chose to sell tokens in batches to Uniswap, swapping them for ETH and donated both the ETH proceeds and the rest of the tokens that could not be sold to a whole host of charities.  Check out this article for more info.
 
