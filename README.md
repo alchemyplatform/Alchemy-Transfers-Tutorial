@@ -22,7 +22,7 @@ Our example dashboard follows along with the story of AKITA and its rescue proce
 
  1. Get the repo!
 
-      * `git clone https://github.com/alchemyplatform/Alchemy-Notify-Tutorial`
+      * `git clone https://github.com/pileofscraps/Alchemy-Transfers-Tutorial`
 
 For all Heroku dependent documentation, refer to:
 https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true 
@@ -46,7 +46,7 @@ for more detailed instructions.  The Heroku instructions included below are abri
 
       If you don’t already have an Alchemy account, [you’ll first need to create one](https://alchemy.com/?r=affiliate:ba2189be-b27d-4ce9-9d52-78ce131fdc2d). The free version will work fine for getting started.  First, we create an App for our Dashboard by clicking “Create App” under the Apps dropdown menu.
 
-      ![webhook_1](https://github.com/pileofscraps/alchemy_notify/blob/master/webhook_1.jpg)
+      ![webhook_1](https://github.com/pileofscraps/Alchemy-Transfers-Tutorial/blob/master/app.png)
       
       Once we have created the app and pointed it towards the appropriate network, we're ready to go and can paste in our key.
 
