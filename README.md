@@ -31,7 +31,7 @@ for more detailed instructions.  The Heroku instructions included below are abri
  2. Install Heroku-CLI and verify/install dependencies.
 
       * Download Heroku-CLI based on your OS [https://devcenter.heroku.com/articles/heroku-cli]
-      * After installation, open your terminal and run `heroku login`; follow the commands that follow to login to your Heroku account.  If you don't have a Heroku account, you can (sign up for one)[https://dashboard.heroku.com/apps]!
+      * After installation, open your terminal and run `heroku login`; follow the commands that follow to login to your Heroku account.  If you don't have a Heroku account, you can [sign up for one](https://dashboard.heroku.com/apps)!
       * Run `node --version`.  You may have any version of Node greater than 10.  If you don’t have it or have an older version, install a more recent version of Node.
       * Run `npm --version`.  `npm` is installed with Node, so check that it’s there. If you don’t have it, install a more recent version of Node:
       * Run `git --version`   Check to make sure you have git installed.  
