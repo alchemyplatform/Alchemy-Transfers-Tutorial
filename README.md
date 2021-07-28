@@ -22,7 +22,7 @@ Our example dashboard follows along with the story of AKITA and its rescue proce
 
  1. Get the repo!
 
-      * `git clone https://github.com/pileofscraps/Alchemy-Transfers-Tutorial`
+      * `https://github.com/alchemyplatform/Alchemy-Transfers-Tutorial`
 
 For all Heroku dependent documentation, refer to:
 https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true 
@@ -37,7 +37,7 @@ for more detailed instructions.  The Heroku instructions included below are abri
       * Run `git --version`   Check to make sure you have git installed.  
 
  3. Initiate Heroku.
-
+ 
       * Run `heroku create` to create your heroku app. Take note of the info that pops up in the terminal, especially the URL that looks like  http://xxxxxxxxx.herokuapp.com/ That's the URL for your dashboard!
 
  3. Add in your Alchemy API Key.
