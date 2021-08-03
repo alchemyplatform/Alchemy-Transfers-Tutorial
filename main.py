@@ -25,7 +25,7 @@ def server():
 		print(result)
 		result = json.loads(result)
 
-		for i in range(len(result["activity"]))
+		for i in range(len(result["activity"])):
 			from_address = (result["activity"][i]["fromAddress"])
 
 			f = open("demo.txt", "a")
