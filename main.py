@@ -20,7 +20,7 @@ def server():
         id = request.args.get('id')
         print(id)
 
-        return('NFT ID is: '+string(id))
+        return(id)
 
     #return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
 
