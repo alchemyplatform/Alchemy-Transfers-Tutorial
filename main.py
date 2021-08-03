@@ -13,7 +13,7 @@ SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/server', methods=['GET', 'POST'])
 def refresh():
 
     if request.method == 'GET':
