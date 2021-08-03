@@ -14,12 +14,13 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 
 @app.route('/server', methods=['GET', 'POST'])
-def refresh():
+def server():
 
     if request.method == 'GET':
-        print(request.data)
+        id = request.args.get('id')
+        print(id)
 
-        return(request.data)
+        return('NFT ID is: '+string(id))
 
     #return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
 
