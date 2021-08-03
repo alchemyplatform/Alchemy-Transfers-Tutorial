@@ -16,33 +16,33 @@ app.config['SECRET_KEY'] = SECRET_KEY
 @app.route('/server', methods=['GET', 'POST'])
 def server():
 
-    if request.method == 'POST':
+	if request.method == 'POST':
 
-        result = request.data
+		result = request.data
 
 		result = json.loads(result)
 		from_address = (result["params"]["result"]["from"])
 		to_address = (result["params"]["result"]["to"])
 
-        f = open("demo.txt", "a")
-        f.write(str(from_address))
-        f.close()
+		f = open("demo.txt", "a")
+		f.write(str(from_address))
+		f.close()
 
-        #open and read the file after the appending:
-        f = open("demo.txt", "r")
-        print(f.read())
+		#open and read the file after the appending:
+		f = open("demo.txt", "r")
+		print(f.read())
 
-        return ('OK')
+		return ('OK')
 
 
-    if request.method == 'GET':
-        id = request.args.get('id')
-        print(id)
+	if request.method == 'GET':
+		id = request.args.get('id')
+		print(id)
 
-        return(id)
+		return(id)
 
-    #return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
+	#return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+	app.run(debug=True, host='0.0.0.0')
