@@ -49,9 +49,9 @@ def server():
 		svg_text = wc.to_svg()
 		print(svg_text)
 
-		pic = {"name":"Address Rainfall 0x0","description":"Off-Chain Word Generation","image_data":str(svg_text),"attributes":[{"trait_type":"Adam","value":"One"},{"trait_type":"Austin","value":"One"},{"trait_type":"Xiangan","value":"One"}]}
+		pic = {"name":"Neolastic 0x01","description":"Liquid On-Chain Generative Neo-Plastic Art","image_data":"<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect x='0' y='0' width='100' height='100' style='fill:#fac901;stroke-width:3;stroke:black'/><rect x='0' y='100' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='0' y='200' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='100' y='0' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='100' y='100' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='100' y='200' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='200' y='0' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='200' y='100' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/><rect x='200' y='200' width='100' height='100' style='fill:undefined;stroke-width:3;stroke:black'/></svg>","attributes":[{"trait_type":"Yellow Tiles","value":"One"},{"trait_type":"Amount of Colours","value":"1 Colours"}]}
 
-		return (str(pic))
+		return (pic)
 
 
 	#return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
