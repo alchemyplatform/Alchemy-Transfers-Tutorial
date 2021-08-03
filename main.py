@@ -18,13 +18,21 @@ def server():
 
     if request.method == 'POST':
 
+        result = request.data
+
+		result = json.loads(result)
+		from_address = (result["params"]["result"]["from"])
+		to_address = (result["params"]["result"]["to"])
+
         f = open("demo.txt", "a")
-        f.write("Now the file has more content!")
+        f.write(str(from_address))
         f.close()
 
         #open and read the file after the appending:
         f = open("demo.txt", "r")
         print(f.read())
+
+        return ('OK')
 
 
     if request.method == 'GET':
