@@ -16,6 +16,17 @@ app.config['SECRET_KEY'] = SECRET_KEY
 @app.route('/server', methods=['GET', 'POST'])
 def server():
 
+    if request.method == 'POST':
+
+    f = open("demo.txt", "a")
+    f.write("Now the file has more content!")
+    f.close()
+
+    #open and read the file after the appending:
+    f = open("demo.txt", "r")
+    print(f.read())
+
+
     if request.method == 'GET':
         id = request.args.get('id')
         print(id)
