@@ -4,6 +4,9 @@ import os
 import json
 from web3 import Web3
 import requests
+from wordcloud import WordCloud
+
+wc = WordCloud()
 
 ALCHEMY_KEY = 'FxyLBv3WXSLLlt09llm7JjMnRWrxYCZB'
 w3 = Web3(Web3.HTTPProvider('https://eth-mainnet.alchemyapi.io/v2/'+ALCHEMY_KEY))
@@ -19,20 +22,22 @@ def server():
 	if request.method == 'POST':
 
 		result = request.data
-
 		result = json.loads(result)
-		from_address = (result["params"]["result"]["from"])
-		to_address = (result["params"]["result"]["to"])
+		from_address = (result["activity"]["fromAddress"])
 
 		f = open("demo.txt", "a")
-		f.write(str(from_address))
+		f.write(str(from_address)z+" ")
 		f.close()
 
-		#open and read the file after the appending:
-		f = open("demo.txt", "r")
-		print(f.read())
+		# Read the whole text.
+		text = open(d, 'demo.txt').read()
+		wc = WordCloud(background_color="white", max_words=2000)
 
-		return ('OK')
+		# generate word cloud
+		wc.generate(text)
+		svg_text = wc.to_svg()
+
+		return (svg_text)
 
 
 	if request.method == 'GET':
