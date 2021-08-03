@@ -42,14 +42,16 @@ def server():
 		# Read the whole text.
 		text = open('demo.txt').read()
 		print(text)
-		wc = WordCloud(background_color="white", max_words=2000)
+		wc = WordCloud(background_color="white", max_words=100)
 
 		# generate word cloud
 		wc.generate(text)
 		svg_text = wc.to_svg()
 		print(svg_text)
 
-		return (svg_text)
+		json = {"name":"Address Rainfall 0x0","description":"Off-Chain Word Generation","image_data":svg_text,"attributes":[{"trait_type":"Adam","value":"One"},{"trait_type":"Austin","value":"One"},{"trait_type":"Xiangan","value":"One"}]}
+
+		return (str(json))
 
 
 	#return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
