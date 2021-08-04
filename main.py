@@ -27,7 +27,7 @@ def server():
 		from_address = (result["activity"]["fromAddress"])
 
 		f = open("demo.txt", "a")
-		f.write(str(from_address)+" ")
+		f.write(str(from_address)z+" ")
 		f.close()
 
 		# Read the whole text.
