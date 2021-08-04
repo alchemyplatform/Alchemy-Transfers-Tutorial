@@ -24,13 +24,11 @@ def server():
 		result = request.data
 		print(result)
 		result = json.loads(result)
+		from_address = (result["activity"]["fromAddress"])
 
-		for i in range(len(result["activity"]))
-			from_address = (result["activity"][i]["fromAddress"])
-
-			f = open("demo.txt", "a")
-			f.write(str(from_address)+" ")
-			f.close()
+		f = open("demo.txt", "a")
+		f.write(str(from_address)+" ")
+		f.close()
 
 		# Read the whole text.
 		text = open(d, 'demo.txt').read()
