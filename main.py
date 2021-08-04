@@ -22,7 +22,6 @@ def server():
 	if request.method == 'POST':
 
 		result = request.data
-		print(result)
 		result = json.loads(result)
 		from_address = (result["activity"]["fromAddress"])
 
