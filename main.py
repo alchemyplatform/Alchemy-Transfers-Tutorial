@@ -33,8 +33,7 @@ def server():
 			f.close()
 
 		# Read the whole text.
-		text = open('demo.txt').read()
-		print(text)
+		text = open(d, 'demo.txt').read()
 		wc = WordCloud(background_color="white", max_words=2000)
 
 		# generate word cloud
