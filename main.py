@@ -32,13 +32,6 @@ def server():
 			f.write(str(from_address)+" ")
 			f.close()
 
-		return ("OK")
-
-
-	if request.method == 'GET':
-		id = request.args.get('id')
-		print(id)
-
 		# Read the whole text.
 		text = open('demo.txt').read()
 		print(text)
@@ -47,10 +40,15 @@ def server():
 		# generate word cloud
 		wc.generate(text)
 		svg_text = wc.to_svg()
-		print(svg_text)
 
 		return (svg_text)
 
+
+	if request.method == 'GET':
+		id = request.args.get('id')
+		print(id)
+
+		return(id)
 
 	#return render_template('index.html', form=form, bal=balance, block_num=block_num, total_burn=total_burn)
 
