@@ -49,7 +49,7 @@ def server():
 		svg_text = wc.to_svg()
 		print(svg_text)
 
-		pic = {"name":"Address Rainfall 0x0","description":"Off-Chain Word Generation","image_data":str(svg_text),"attributes":[{"trait_type":"Adam","value":"One"},{"trait_type":"Austin","value":"One"},{"trait_type":"Xiangan","value":"One"}]}
+		pic = {"name":"Address Rainfall 0x0","description":"Off-Chain Word Generation","image_data":svg_text,"attributes":[{"trait_type":"Adam","value":"One"},{"trait_type":"Austin","value":"One"},{"trait_type":"Xiangan","value":"One"}]}
 
 		return (str(pic))
 
