@@ -32,10 +32,6 @@ def server():
 			f.write(str(from_address)+" ")
 			f.close()
 
-		print("PRINTING")
-		text = open('demo.txt').read()
-		print(text)
-
 		return ("OK")
 
 
